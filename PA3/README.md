@@ -8,9 +8,11 @@ Author: Chun-Hsiao Yeh r0425061
 Date: 05/07/2018
 
 =====
+
 SYNOPSIS:
 
 =====
+
 DIRECTORY:
 
   bin/		executable binary
@@ -27,6 +29,7 @@ HOW TO CIMPILE:
 	make
 ```
 ======
+
 HOW TO RUN:
 now you can use make in r04525061_pa3
 after that you can generate a document named Routing in bin folder
@@ -37,4 +40,5 @@ you can just run ./bin/Routing ./inputs/case1.in ./outputs/case1.out
 Then you will be getting the result on screen. 
 
 ======
+
 OTHER NOTICE:
