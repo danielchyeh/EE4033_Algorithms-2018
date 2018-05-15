@@ -1,4 +1,5 @@
-Algorithm PA#2
+#Algorithm PA2
+
 This is README file for Algorithm PA#2
 Author: <Chun-Hsiao Yeh r04525061>
 Date: 2018/03/20
