@@ -27,8 +27,8 @@ DIRECTORY:
 
 HOW TO CIMPILE:
 ```
-	cd PA3/
-	make
+cd PA3/
+make
 ```
 ======
 
@@ -37,7 +37,7 @@ now you can use make in r04525061_pa3
 after that you can generate a document named Routing in bin folder
 if you wanna run case1, you can just run
 ```
- ./bin/Routing ./inputs/case1.in ./outputs/case1.out
+./bin/Routing ./inputs/case1.in ./outputs/case1.out
 ```
 Then you will be getting the result on screen. 
 
