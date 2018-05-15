@@ -19,15 +19,6 @@ DIRECTORY:
 ======
 
 HOW TO CIMPILE:
-2. Run the shell script!
-```
-./run.sh [test file]
-```
-
-```
-./run.sh [test file]
-```
-
 ```
 cd PA2/
 make
