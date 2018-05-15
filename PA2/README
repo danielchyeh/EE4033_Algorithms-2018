@@ -1,0 +1,32 @@
+This is README file for Algorithm PA#2
+Author: <葉峻孝 r04525061>
+Date:
+=====
+SYNOPSIS:
+
+
+=====
+DIRECTORY:
+
+  bin/		executable binary
+  doc/		reports
+  inputs/	input files
+  outputs/	output files
+  lib/		library
+  src/ 		source C++ codes
+  
+======
+HOW TO CIMPILE:
+
+	cd PA2/
+	make
+ 
+
+======
+HOW TO RUN:
+
+到工作站當中直接執行
+./bin/WorkerAnt –[GD|DP] <input_file_name> <output_file_name>
+當中的GD DP是可以選擇。
+======
+OTHER NOTICE:
