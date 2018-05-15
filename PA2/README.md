@@ -1,7 +1,9 @@
 # Algorithm PA2
 
 This is README file for Algorithm PA#2
+
 Author: <Chun-Hsiao Yeh r04525061>
+
 Date: 2018/03/20
 SYNOPSIS:
 
@@ -15,7 +17,7 @@ DIRECTORY:
   src/ 		source C++ codes
   
 ======
-HOW TO CIMPILE:
+- HOW TO CIMPILE:
 ```
 ./run.sh [test file]
 ```
