@@ -17,7 +17,13 @@ DIRECTORY:
   src/ 		source C++ codes
   
 ======
-- HOW TO CIMPILE:
+
+HOW TO CIMPILE:
+2. Run the shell script!
+```
+./run.sh [test file]
+```
+
 ```
 ./run.sh [test file]
 ```
@@ -27,6 +33,7 @@ cd PA2/
 make
 ```
 ======
+
 HOW TO RUN:
 
 we get into workstation to run
