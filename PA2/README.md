@@ -1,4 +1,4 @@
-#Algorithm PA2
+# Algorithm PA2
 
 This is README file for Algorithm PA#2
 Author: <Chun-Hsiao Yeh r04525061>
@@ -16,6 +16,10 @@ DIRECTORY:
   
 ======
 HOW TO CIMPILE:
+```
+./run.sh [test file]
+```
+
 ```
 cd PA2/
 make
