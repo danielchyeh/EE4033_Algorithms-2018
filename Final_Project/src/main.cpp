@@ -19,10 +19,9 @@ void help_message() {
     cout << "usage: Routing <input_file_pins> <input_file_blockages> <input_file_nets> <output_file>" << endl;
 }
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
 
-    if(argc != 5) {
+    if (argc != 5) {
        help_message();
        return 0;
     }
@@ -89,9 +88,9 @@ int main(int argc, char* argv[])
 
     //////////// perform routing on the nets ////
 
-  	tmusg.periodStart();
+    tmusg.periodStart();
 
-	  Routing Router;
+    Routing Router;
 
     // TODO
 
