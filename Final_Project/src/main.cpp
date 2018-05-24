@@ -49,26 +49,27 @@ int main(int argc, char* argv[]) {
   	fstream fin1(argv[1]), fin2(argv[2]), fin3(argv[3]);
 
     // Read pins
-    int id, layer, x1, y1, x2, y2;
+    int id, layer;
+    float x1, y1, x2, y2;
     while (fin1 >> id >> layer >> x1 >> y1) {
       metal.push_back(layer);
-      pin_x.push_back(x1);
-      pin_y.push_back(y1);
+      pin_x.push_back(int(2*x1));
+      pin_y.push_back(int(2*y1));
     }
 
     // Read blockages
     while (fin2 >> x1 >> y1 >> x2 >> y2) {
-      block_x.push_back(x1);
-      block_x.push_back(x2);
-      block_y.push_back(y1);
-      block_y.push_back(y2);
+      block_x.push_back(int(2*x1));
+      block_x.push_back(int(2*x2));
+      block_y.push_back(int(2*y1));
+      block_y.push_back(int(2*y2));
     }
 
     // Read nets
     int i = 0, j = 0, num;
     char c;
     string buffer;
-  	while (getline(fin3, buffer)) {
+    while (getline(fin3, buffer)) {
       istringstream iss(buffer);
       while (iss >> num){
         Net[i][j] = num;
