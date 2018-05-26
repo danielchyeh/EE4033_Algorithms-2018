@@ -15,13 +15,13 @@ SYNOPSIS:
 
 DIRECTORY:
 
-  bin/		executable binary
+    bin/		executable binary
   
-  cases_0509/	input and output files, case1, case2
+    cases_0509/	input and output files, case1, case2
   
-  lib/		library
+    lib/		library
   
-  src/ 		source C++ codes
+    src/ 		source C++ codes
   
 ======
 
