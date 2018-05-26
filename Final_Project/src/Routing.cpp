@@ -419,6 +419,7 @@ void Routing::routing(vector<int>& Pin_x, vector<int>& Pin_y, vector<int>& metal
 		
 	}
 
+	//visualization of layout
 	/*
 	fstream fout;
 	string layoutvisual = "./cases_0509/case1_layout.out";
@@ -427,95 +428,6 @@ void Routing::routing(vector<int>& Pin_x, vector<int>& Pin_y, vector<int>& metal
 	writeLayout(fout, RgraphTrace);
 	*/
 	
-
-	/*
-	//show and save result to output file
-	int netk = 0;
-	for (int i = 0; i < num_nets; i++){
-		cout << "Net " << i+1 << endl;
-
-		int fla = 0;
-
-		int color_major, color_minor;//the output format of metal should be like 2(color_major) 1(color_minor)
-
-		for (int j = 1; j < 20; j++){//20 is just constant, means no more than 20 pins in a net
-			if (Net[i][j]>0){
-				for (int k = netk; k < netX.size(); k++){
-					if (!((Pin_x[Net[i][j]-1] == netX[k]) && (Pin_y[Net[i][j]-1] == netY[k]))){
-						if (i == 0){
-							//compare the path with pin array to see if path includes pin position, if yes, we assign the metal of pin into path.
-							int index_w = 0;
-							int flag_w = 0;
-							for (int w = 0; w<Pin_x.size(); w++){
-								if (((netX[k] == Pin_x[w]) && (netY[k] == Pin_y[w])) || ((netX[k + 1] == Pin_x[w]) && (netY[k + 1] == Pin_y[w]))){//comparasion between path and pin array
-									index_w = w;
-									flag_w = 1;
-								}
-							}
-							if (flag_w==1){
-								color_major = metal[index_w];
-								color_minor = 2;
-							}
-							else{
-								if (abs(netX[k] - netX[k + 1])>0){
-									color_major = 1;
-									color_minor = 1;
-								}
-								else{
-									color_major = 2;
-									color_minor = 1;
-								}
-							}
-
-
-							cout <<"+ "<< float(netX[k])/2 << " " << float(netY[k])/2 << " " <<
-								float(netX[k + 1])/2 << " " << float(netY[k + 1])/2 <<" "<<color_major<<" "<<color_minor<<endl;
-						}
-						else{
-							if (fla>0){
-								int index_w = 0;
-								int flag_w = 0;
-								for (int w = 0; w<Pin_x.size(); w++){
-									if (((netX[k] == Pin_x[w]) && (netY[k] == Pin_y[w])) || ((netX[k + 1] == Pin_x[w]) && (netY[k + 1] == Pin_y[w]))){
-										index_w = w;
-										flag_w = 1;
-									}
-								}
-								if (flag_w == 1){
-									color_major = metal[index_w];
-									color_minor = 2;
-								}
-								else{
-									if (abs(netX[k] - netX[k + 1])>0){
-										color_major = 1;
-										color_minor = 1;
-									}
-									else{
-										color_major = 2;
-										color_minor = 1;
-									}
-								}
-
-								cout <<"+ "<< float(netX[k])/2 << " " << float(netY[k])/2 << " " <<
-									float(netX[k + 1]) / 2 << " " << float(netY[k + 1]) / 2 << " " << color_major << " " << color_minor <<endl;
-							}
-							fla++;
-						}
-					}
-					else{
-						netk = k;
-						break;
-					}
-				}
-			}
-			else{ break; }
-		}
-		fla = 0;
-
-	}
-
-	*/
-
 
 
 
