@@ -1,0 +1,28 @@
+This is README file for Algorithm PA#3
+Author: <please fill in name and student ID>
+Date:
+=====
+SYNOPSIS:
+
+
+=====
+DIRECTORY:
+
+  bin/		executable binary
+  doc/		reports
+  inputs/	input files
+  outputs/	output files
+  lib/		library
+  src/ 		source C++ codes
+  
+======
+HOW TO CIMPILE:
+
+	cd PA3/
+	make
+
+======
+HOW TO RUN:
+
+======
+OTHER NOTICE:
