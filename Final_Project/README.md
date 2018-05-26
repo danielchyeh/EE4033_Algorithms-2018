@@ -2,7 +2,7 @@
 
 This is README file for 2018 ICCAD Problem E
 
-Author: [2018/05/26 Yun-Hsiang Liang, Chun-Hsiao Yeh, Chi-Fan Juang]
+Author: [Yun-Hsiang Liang, Chun-Hsiao Yeh, Chi-Fan Juang]
 
 Date: 05/27/2018
 
