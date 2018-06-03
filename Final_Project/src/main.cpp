@@ -16,7 +16,7 @@
 using namespace std;
 
 void help_message() {
-	cout << "usage: Routing <input_file_pins> <input_file_blockages> <input_file_nets> <output_file>" << endl;
+	cout << "usage: Routing <input_file_pins> <input_file_nets> <input_file_blockages> <output_file>" << endl;
 }
 
 int main(int argc, char* argv[])
@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
 	}
 
 	char line[1000];
-	fstream fin1(argv[1]), fin2(argv[3]), fin3(argv[2]);
+	fstream fin1(argv[1]), fin2(argv[2]), fin3(argv[3]);
 
 	// Read pins
 	int id, layer;
@@ -69,7 +69,7 @@ int main(int argc, char* argv[])
 	}
 
 	// Read blockages
-	while (fin2 >> x1 >> y1 >> x2 >> y2) {
+	while (fin3 >> x1 >> y1 >> x2 >> y2) {
 		block_x.push_back(int(2 * x1));
 		block_x.push_back(int(2 * x2));
 		block_y.push_back(int(2 * y1));
@@ -81,7 +81,7 @@ int main(int argc, char* argv[])
 	char c;
 	int num_nets = 0;
 	string buffer;
-	while (getline(fin3, buffer)) {
+	while (getline(fin2, buffer)) {
 		istringstream iss(buffer);
 		int in_flag = 0;
 
